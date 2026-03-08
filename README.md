@@ -1,114 +1,192 @@
-<div class="resume">
+# Garret Ping
 
-  <div class="contact">
-    <p>
-      <strong>Email:</strong> <a href="mailto:Ping.garret@gmail.com">Ping.garret@gmail.com</a> |
-      <strong>Phone:</strong> (512) 751-2086 |
-      <strong>Location:</strong> Austin, Texas |
-      <strong>LinkedIn:</strong> <a href="https://LinkedIn.com/in/garret-ping/">LinkedIn.com/in/garret-ping</a>
-    </p>
-  </div>
+Economics and Finance graduate from the University of Texas at Austin with experience in financial analysis, econometrics, and data driven decision making. I am interested in roles in investment analysis, financial advisory, and capital markets where quantitative analysis and business strategy intersect.
 
-  <section>
-    <h2>Education</h2>
-    <h3>University of Texas at Austin</h3>
-    <p><em>December 2025</em></p>
-    <p>Bachelor of Science in Economics; Minor in Finance and Business Administration</p>
-    <p>
-      <strong>Relevant Coursework:</strong> Accounting, Finance, Statistical Economics,
-      Microeconomics, Macroeconomics, Game Theory, Computational Economics,
-      Management Information Systems, Business Law and Ethics, Marketing,
-      Software Design, Data Structures
-    </p>
-  </section>
+Austin, Texas
+Email: [Ping.garret@gmail.com](mailto:Ping.garret@gmail.com)
+LinkedIn: https://linkedin.com/in/garret-ping
 
-  <section>
-    <h2>Experience</h2>
+---
 
-    <h3>Frost Bank – Client Services Associate (Part-time)</h3>
-    <p><em>Austin, Texas | August 2025 – December 2025</em></p>
-    <ul>
-      <li>Managed and balanced $20,000+ in transactions daily with 100% accuracy while maintaining regulatory compliance.</li>
-      <li>Analyzed 500+ transaction patterns and account activity to support fraud prevention and risk management initiatives.</li>
-      <li>Provided professional client support through financial inquiry resolution and document verification.</li>
-      <li>Executed daily reconciliation procedures and internal control checks on $100,000+ in cash assets.</li>
-    </ul>
+## About Me
 
-    <h3>Austin Central Realty – Real Estate Assistant</h3>
-    <p><em>Austin, Texas | June 2023 – August 2023</em></p>
-    <ul>
-      <li>Developed and launched company website using IDX integration, increasing online property inquiries by 25% within two months.</li>
-      <li>Collected and reconciled $15,000+ in rental revenue using Excel tracking.</li>
-      <li>Installed 30+ strategically placed leasing signs contributing to a 15% increase in inquiries.</li>
-    </ul>
+My academic background combines economics, finance, and computational analysis. I enjoy studying how markets function, how risk is priced, and how data can be used to improve financial decision making.
 
-    <h3>Austin Tennis Center – Tennis Coach</h3>
-    <p><em>Austin, Texas | May 2022 – August 2022</em></p>
-    <ul>
-      <li>Designed lesson plans for 15+ beginner and intermediate players.</li>
-      <li>Led weekly summer camps for children ages 6–12 focusing on skill development.</li>
-      <li>Organized doubles matches and group drills to improve teamwork and communication.</li>
-    </ul>
+Through my coursework and professional experience I have worked with financial modeling, regression analysis, and business analytics tools to evaluate economic relationships and operational performance. I am particularly interested in investment research, financial modeling, and analytical roles within financial institutions and advisory firms.
 
-  </section>
+---
 
-  <section>
-    <h2>Projects</h2>
+## Education
 
-    <h3>Austin Central Realty Domain – Client: Austin Central Realty</h3>
-    <p><em>August 2023</em></p>
-    <ul>
-      <li>Built a custom Wix website with four property listings attracting 43 monthly visitors.</li>
-      <li>Integrated IDX software from Matrix MLS enabling real time property search.</li>
-      <li>Established branded email system through domain hosting.</li>
-    </ul>
+**University of Texas at Austin**
+Bachelor of Science in Economics
+Minor in Finance and Business Administration
+Graduated December 2025
 
-    <h3>ECO 441K Econometrics Research – State Poverty on Healthcare Expenditure</h3>
-    <p><em>December 2023</em></p>
-    <ul>
-      <li>Analyzed 500+ data points in Stata to examine links between poverty and healthcare spending.</li>
-      <li>Conducted multivariate regression using Poverty, Income, Uninsured, Region, and Unknown variables.</li>
-      <li>Found insurance status to be the most statistically significant variable.</li>
-    </ul>
+Relevant coursework included:
 
-  </section>
+Accounting
+Corporate Finance
+Statistical Economics
+Microeconomics and Macroeconomics
+Game Theory
+Econometrics
+Computational Economics
+Management Information Systems
+Business Law and Ethics
 
-  <section>
-    <h2>Leadership and Activities</h2>
+---
 
-    <h3>Planet Longhorn – Business Relations and Events Director</h3>
-    <p><em>August 2022 – May 2024</em></p>
-    <ul>
-      <li>Managed $7,000 annual budget while maintaining fully balanced accounts.</li>
-      <li>Secured profit share agreements and event venues generating $4,000+ additional funding.</li>
-      <li>Coordinated with a developer to launch a new organization website.</li>
-    </ul>
+## Professional Experience
 
-    <h3>Austin Parks & Foundations – Austin City Limits Music Festival Volunteer</h3>
-    <p><em>October 2024</em></p>
-    <ul>
-      <li>Encouraged 400+ attendees to participate in recycling programs.</li>
-      <li>Managed 1,000+ item inventory for merchandise redemption.</li>
-    </ul>
+### Frost Bank — Client Services Associate
 
-  </section>
+Austin, Texas
+August 2025 to December 2025
 
-  <section>
-    <h2>Honors</h2>
-    <ul>
-      <li>Dean’s Honor List – Cum Laude ampla et Magna</li>
-      <li>Pflugerville High School Valedictorian, Class of 2021</li>
-    </ul>
-  </section>
+Managed high volume financial transactions while maintaining strict regulatory and internal control standards.
 
-  <section>
-    <h2>Additional Information</h2>
-    <p><strong>Technical Skills:</strong> Java, Python, C, JavaScript, HTML, R, Stata, Excel, Wix, MLS, Canva, Notion, Microsoft Office Suite</p>
-    <p><strong>Certifications:</strong> Texas Real Estate License 2025, CFDS Financial Modeling 2025</p>
-    <p><strong>Languages:</strong> Khmer (Intermediate)</p>
-    <p><strong>Work Eligibility:</strong> Eligible to work in the United States with no restrictions</p>
-  </section>
+Key contributions:
 
-</div>​
+Handled more than twenty thousand dollars in daily transactions with full accuracy and compliance
+Reviewed transaction activity and account patterns to assist fraud detection and risk monitoring
+Provided direct client support through financial inquiries and documentation verification
+Performed daily cash reconciliation and internal control procedures for more than one hundred thousand dollars in assets
 
-
+---
+
+### Austin Central Realty — Real Estate Assistant
+
+Austin, Texas
+June 2023 to August 2023
+
+Supported operational and financial processes for a local real estate brokerage.
+
+Key contributions:
+
+Developed and launched a property listing website with IDX integration that increased online property inquiries by approximately twenty five percent
+Tracked rental payments and reconciled more than fifteen thousand dollars in rental income using spreadsheet based reporting
+Supported marketing and property exposure through targeted physical leasing placements
+
+---
+
+### Austin Tennis Center — Tennis Coach
+
+Austin, Texas
+May 2022 to August 2022
+
+Coached beginner and intermediate tennis players through structured training programs and summer camps.
+
+Key contributions:
+
+Designed progressive training programs for players developing serve, rally, and match play skills
+Led youth summer camps focused on foundational athletic development
+Organized competitive and cooperative match formats to encourage teamwork and communication
+
+---
+
+## Selected Projects
+
+### Econometrics Research Project
+
+State Poverty and Healthcare Expenditure
+
+Conducted an econometric analysis examining the relationship between poverty and healthcare spending using statistical modeling.
+
+Key work:
+
+Analyzed more than five hundred data observations using Stata
+Built a multivariate regression model incorporating poverty rate, income, insurance coverage, and geographic variables
+Identified insurance coverage as the strongest predictor of healthcare expenditure patterns
+
+---
+
+### Real Estate Website Development
+
+Developed a real estate website for a brokerage firm to improve online client engagement.
+
+Key work:
+
+Built a custom website using Wix
+Integrated Matrix MLS property data through IDX software
+Implemented domain based business email system and listing search tools
+
+---
+
+## Leadership and Activities
+
+### Planet Longhorn — Business Relations and Events Director
+
+Managed partnerships, budgeting, and operational logistics for a university student organization.
+
+Key contributions:
+
+Managed a seven thousand dollar annual operating budget
+Negotiated venue agreements and sponsorship arrangements generating additional funding
+Coordinated development of a new organizational website to improve member outreach
+
+---
+
+### Austin City Limits Music Festival Volunteer
+
+Supported environmental sustainability initiatives during the festival.
+
+Key contributions:
+
+Encouraged hundreds of attendees to participate in recycling programs
+Managed inventory and distribution of volunteer merchandise
+
+---
+
+## Technical Skills
+
+Programming and Analysis
+
+Python
+R
+Java
+C
+JavaScript
+HTML
+
+Financial and Data Tools
+
+Excel
+Stata
+MLS systems
+Wix website platform
+Notion
+Microsoft Office
+
+---
+
+## Certifications
+
+Texas Real Estate License
+Financial Modeling Certification
+
+---
+
+## Languages
+
+Khmer
+Intermediate conversational proficiency
+
+---
+
+## Current Interests
+
+Financial markets
+Investment research
+Financial modeling
+Capital markets
+Economic data analysis
+
+---
+
+## Contact
+
+If you are interested in connecting about finance, investments, or analytical work, feel free to reach out.
+
+LinkedIn
+https://linkedin.com/in/garret-ping
