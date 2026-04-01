@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/pingg/Downloads/index.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garret Ping — Finance Analyst</title>
+  <link href="./Garret Ping — Finance Analyst_files/css2" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0d1b2a;
+      --ink:    #1a2e45;
+      --steel:  #2e5077;
+      --gold:   #b89a5a;
+      --cream:  #f5f0e8;
+      --warm:   #ede7d9;
+      --text:   #1a1a2e;
+      --muted:  #6b7280;
+      --white:  #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Mono', monospace;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 4rem;
+      background: rgba(245, 240, 232, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(184,154,90,0.2);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 600;
+      letter-spacing: 0.08em; color: var(--navy);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      padding-top: 80px;
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 5rem 3rem 5rem 4rem;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: inline-block;
+      width: 2rem; height: 1px; background: var(--gold);
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.2rem, 5vw, 5.5rem);
+      font-weight: 300; line-height: 1.05;
+      color: var(--navy); margin-bottom: 0.2rem;
+    }
+    h1 em { font-style: italic; color: var(--steel); }
+    .hero-subtitle {
+      font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted);
+      margin: 1.8rem 0 2.8rem; line-height: 1.8; max-width: 38ch;
+    }
+    .hero-cta {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .btn-primary {
+      padding: 0.85rem 2rem;
+      background: var(--navy); color: var(--cream);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--steel); transform: translateY(-2px); }
+    .btn-outline {
+      padding: 0.85rem 2rem;
+      background: transparent; color: var(--navy);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; border: 1px solid var(--navy); cursor: pointer;
+      transition: all 0.25s;
+    }
+    .btn-outline:hover { background: var(--navy); color: var(--cream); }
+
+    .hero-right {
+      background: var(--navy);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 4rem 3.5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute; top: -80px; right: -80px;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(46,80,119,0.6) 0%, transparent 70%);
+    }
+    .hero-right::after {
+      content: '';
+      position: absolute; bottom: 60px; left: -40px;
+      width: 200px; height: 200px;
+      border: 1px solid rgba(184,154,90,0.2);
+      border-radius: 50%;
+    }
+    .hero-stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+      position: relative; z-index: 1;
+    }
+    .hero-stat {
+      padding: 1.8rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem; font-weight: 300;
+      color: var(--gold); line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 0.58rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: rgba(255,255,255,0.45);
+      margin-top: 0.5rem;
+    }
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 300; font-style: italic;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 2.5rem; position: relative; z-index: 1;
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS SHARED ── */
+    section { padding: 6rem 4rem; }
+    .section-label {
+      font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.8rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .section-label::before {
+      content: ''; display: inline-block;
+      width: 1.5rem; height: 1px; background: var(--gold);
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3.2rem);
+      font-weight: 300; color: var(--navy); line-height: 1.1;
+      margin-bottom: 3rem;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem;
+      align-items: start;
+    }
+    .about-left {}
+    .about-text {
+      font-size: 0.82rem; line-height: 2; color: #3a3a4a;
+      margin-bottom: 1.5rem;
+    }
+    .about-details {
+      margin-top: 2rem;
+      display: flex; flex-direction: column; gap: 0.7rem;
+    }
+    .about-detail-row {
+      display: flex; gap: 1.5rem; font-size: 0.68rem;
+      border-top: 1px solid var(--warm); padding-top: 0.7rem;
+    }
+    .detail-key {
+      color: var(--gold); letter-spacing: 0.12em;
+      text-transform: uppercase; min-width: 100px;
+    }
+    .detail-val { color: var(--muted); }
+
+    .about-right {}
+    .credentials-box {
+      background: var(--navy); padding: 2.5rem; margin-bottom: 1.5rem;
+    }
+    .cred-title {
+      font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+    }
+    .cred-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.7rem;
+    }
+    .cred-item:last-child { border-bottom: none; }
+    .cred-name { color: var(--cream); }
+    .cred-meta { color: rgba(255,255,255,0.4); font-size: 0.62rem; }
+    .cred-badge {
+      font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; background: rgba(184,154,90,0.15);
+      color: var(--gold); border: 1px solid rgba(184,154,90,0.3);
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--cream); }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    }
+    .skill-card {
+      background: var(--white);
+      padding: 2rem;
+      border-top: 3px solid transparent;
+      transition: border-color 0.25s, transform 0.25s;
+      position: relative; overflow: hidden;
+    }
+    .skill-card::after {
+      content: '';
+      position: absolute; bottom: 0; right: 0;
+      width: 60px; height: 60px;
+      background: var(--warm);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      transition: opacity 0.25s;
+    }
+    .skill-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .skill-card-icon {
+      font-size: 1.5rem; margin-bottom: 1rem;
+    }
+    .skill-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 1rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-tag {
+      font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      background: var(--warm); color: var(--muted);
+      border: 1px solid rgba(0,0,0,0.07);
+    }
+
+    /* ── PROJECTS ── */
+    #projects { background: var(--navy); }
+    #projects h2 { color: var(--cream); }
+    #projects .section-label { color: var(--gold); }
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 2.5rem;
+      transition: background 0.25s;
+      position: relative;
+    }
+    .project-card:hover { background: rgba(255,255,255,0.08); }
+    .project-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem; font-weight: 300;
+      color: rgba(184,154,90,0.2);
+      position: absolute; top: 1.5rem; right: 2rem;
+      line-height: 1;
+    }
+    .project-tag {
+      font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .project-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 400;
+      color: var(--cream); margin-bottom: 0.8rem; line-height: 1.2;
+    }
+    .project-desc {
+      font-size: 0.7rem; line-height: 1.9;
+      color: rgba(255,255,255,0.5); margin-bottom: 1.5rem;
+    }
+    .project-metrics {
+      display: flex; gap: 1.5rem;
+    }
+    .project-metric { text-align: center; }
+    .project-metric-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; color: var(--gold);
+    }
+    .project-metric-label {
+      font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--cream); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem;
+      align-items: start;
+    }
+    .contact-intro {
+      font-size: 0.8rem; line-height: 2; color: var(--muted); margin-bottom: 2rem;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 1px; }
+    .contact-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 1.5rem;
+      background: var(--white);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .contact-link:hover { border-color: var(--gold); background: var(--warm); }
+    .contact-link-left { display: flex; align-items: center; gap: 1rem; }
+    .contact-link-icon { font-size: 1.1rem; }
+    .contact-link-label {
+      font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--navy);
+    }
+    .contact-link-val {
+      font-size: 0.65rem; color: var(--muted);
+    }
+    .contact-arrow { color: var(--gold); font-size: 0.9rem; }
+
+    .contact-right {}
+    .availability-card {
+      background: var(--navy); padding: 2.5rem;
+    }
+    .avail-status {
+      display: flex; align-items: center; gap: 0.7rem;
+      margin-bottom: 1.5rem;
+    }
+    .avail-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #4ade80;
+      box-shadow: 0 0 8px rgba(74,222,128,0.6);
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%,100% { opacity: 1; } 50% { opacity: 0.4; }
+    }
+    .avail-text {
+      font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+    .avail-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 300; font-style: italic;
+      color: var(--cream); margin-bottom: 1rem; line-height: 1.3;
+    }
+    .avail-desc {
+      font-size: 0.68rem; line-height: 1.9;
+      color: rgba(255,255,255,0.4); margin-bottom: 2rem;
+    }
+    .avail-roles { display: flex; flex-direction: column; gap: 0.5rem; }
+    .avail-role {
+      display: flex; align-items: center; gap: 0.7rem;
+      font-size: 0.65rem; color: rgba(255,255,255,0.6);
+    }
+    .avail-role::before {
+      content: '→'; color: var(--gold); font-size: 0.7rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      padding: 2rem 4rem;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(184,154,90,0.2);
+    }
+    .footer-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; color: rgba(255,255,255,0.5);
+    }
+    .footer-note {
+      font-size: 0.6rem; letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.25); text-transform: uppercase;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-up {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      #hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      section { padding: 4rem 1.5rem; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+    @media (max-width: 560px) {
+      .skills-grid { grid-template-columns: 1fr; }
+      .hero-left { padding: 4rem 1.5rem; }
+      .nav-links { gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="file:///C:/Users/pingg/Downloads/index.html#hero" class="nav-logo">G. Ping</a>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/pingg/Downloads/index.html#about">About</a></li>
+    <li><a href="file:///C:/Users/pingg/Downloads/index.html#skills">Skills</a></li>
+    <li><a href="file:///C:/Users/pingg/Downloads/index.html#projects">Projects</a></li>
+    <li><a href="file:///C:/Users/pingg/Downloads/index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Finance Analyst · Austin, TX</div>
+    <h1>Garret<br><em>Ping</em></h1>
+    <p class="hero-subtitle">
+      B.S. Economics · UT Austin · Cum Laude<br>
+      FP&amp;A · Investment Banking · Financial Modeling<br>
+      Turning data into decisions that move organizations forward.
+    </p>
+    <div class="hero-cta">
+      <a href="file:///C:/Users/pingg/Downloads/index.html#contact" class="btn-primary">Get In Touch</a>
+      <a href="file:///C:/Users/pingg/Downloads/index.html#projects" class="btn-outline">View Work</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="hero-tagline">"Quantitative rigor<br>meets strategic clarity."</p>
+    <div class="hero-stat-grid">
+      <div class="hero-stat">
+        <div class="hero-stat-num">$20K+</div>
+        <div class="hero-stat-label">Daily transactions managed</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">100%</div>
+        <div class="hero-stat-label">Reconciliation accuracy</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">$7K</div>
+        <div class="hero-stat-label">Budget managed</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">25%</div>
+        <div class="hero-stat-label">Lead growth delivered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid fade-up visible">
+    <div class="about-left">
+      <div class="section-label">About Me</div>
+      <h2>Finance mind,<br>analytical edge.</h2>
+      <p class="about-text">
+        I'm a recent Economics graduate from UT Austin with a passion for financial analysis, modeling, and data-driven strategy. My background spans banking operations, real estate finance, and academic econometrics research.
+      </p>
+      <p class="about-text">
+        I thrive at the intersection of numbers and narrative — translating complex financial data into clear, actionable insights for stakeholders. Whether it's building a DCF model, reconciling a cash ledger, or uncovering a statistical insight in Stata, I bring precision and curiosity to every problem.
+      </p>
+      <div class="about-details">
+        <div class="about-detail-row">
+          <span class="detail-key">Location</span>
+          <span class="detail-val">Austin, Texas</span>
+        </div>
+        <div class="about-detail-row">
+          <span class="detail-key">Degree</span>
+          <span class="detail-val">B.S. Economics, UT Austin — Cum Laude</span>
+        </div>
+        <div class="about-detail-row">
+          <span class="detail-key">Focus</span>
+          <span class="detail-val">FP&amp;A, Investment Banking, Corporate Finance</span>
+        </div>
+        <div class="about-detail-row">
+          <span class="detail-key">Status</span>
+          <span class="detail-val">Open to full-time opportunities</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="credentials-box">
+        <div class="cred-title">Credentials &amp; Experience</div>
+        <div class="cred-item">
+          <span class="cred-name">CFDS Financial Modeling Cert.</span>
+          <span class="cred-badge">2025</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-name">Texas Real Estate License</span>
+          <span class="cred-badge">2025</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-name">Frost Bank — Client Services</span>
+          <span class="cred-meta">Aug–Dec 2025</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-name">Dean's Honor List, UT Austin</span>
+          <span class="cred-meta">2023</span>
+        </div>
+        <div class="cred-item">
+          <span class="cred-name">Valedictorian — Class of 2021</span>
+          <span class="cred-meta">Rank 1 of 541</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label fade-up visible">Capabilities</div>
+  <h2 class="fade-up visible">What I bring<br>to the table.</h2>
+  <div class="skills-grid">
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">📊</div>
+      <div class="skill-card-title">Financial Modeling</div>
+      <div class="skill-tags">
+        <span class="skill-tag">DCF</span>
+        <span class="skill-tag">LBO</span>
+        <span class="skill-tag">3-Statement</span>
+        <span class="skill-tag">Scenario Analysis</span>
+        <span class="skill-tag">Variance Analysis</span>
+        <span class="skill-tag">Forecasting</span>
+      </div>
+    </div>
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">📈</div>
+      <div class="skill-card-title">FP&amp;A &amp; Reporting</div>
+      <div class="skill-tags">
+        <span class="skill-tag">P&amp;L Management</span>
+        <span class="skill-tag">Budget Mgmt</span>
+        <span class="skill-tag">KPI Dashboards</span>
+        <span class="skill-tag">GAAP</span>
+        <span class="skill-tag">Reconciliation</span>
+      </div>
+    </div>
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">🔢</div>
+      <div class="skill-card-title">Quantitative Analysis</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Econometrics</span>
+        <span class="skill-tag">Regression</span>
+        <span class="skill-tag">Statistical Modeling</span>
+        <span class="skill-tag">Data Analysis</span>
+      </div>
+    </div>
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">💻</div>
+      <div class="skill-card-title">Technical Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Excel (Adv.)</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">Stata</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Bloomberg</span>
+      </div>
+    </div>
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">🏦</div>
+      <div class="skill-card-title">Banking &amp; Risk</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Fraud Detection</span>
+        <span class="skill-tag">Risk Mgmt</span>
+        <span class="skill-tag">Compliance</span>
+        <span class="skill-tag">Audit Readiness</span>
+        <span class="skill-tag">AML</span>
+      </div>
+    </div>
+    <div class="skill-card fade-up visible">
+      <div class="skill-card-icon">🌐</div>
+      <div class="skill-card-title">Other Skills</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Khmer (Conv.)</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Notion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label fade-up visible">Selected Work</div>
+  <h2 class="fade-up visible">Projects &amp;<br>Research.</h2>
+  <div class="projects-grid">
+    <div class="project-card fade-up visible">
+      <div class="project-num">01</div>
+      <div class="project-tag">Financial Modeling · 2025</div>
+      <div class="project-title">CFDS Financial<br>Modeling Certification</div>
+      <p class="project-desc">Built integrated 3-statement financial models, DCF valuations, and leveraged buyout (LBO) analyses. Applied comparable company analysis frameworks used in professional investment banking contexts.</p>
+      <div class="project-metrics">
+        <div class="project-metric">
+          <div class="project-metric-val">3-Stmt</div>
+          <div class="project-metric-label">Model Built</div>
+        </div>
+        <div class="project-metric">
+          <div class="project-metric-val">DCF+LBO</div>
+          <div class="project-metric-label">Frameworks</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-up visible">
+      <div class="project-num">02</div>
+      <div class="project-tag">Econometrics Research · UT Austin · 2023</div>
+      <div class="project-title">State Poverty &amp;<br>Healthcare Expenditure</div>
+      <p class="project-desc">Analyzed 500+ data points in Stata using multivariate regression to identify the primary determinants of state-level healthcare spending. Identified insurance coverage as the dominant driver, with policy implications for targeted reform.</p>
+      <div class="project-metrics">
+        <div class="project-metric">
+          <div class="project-metric-val">500+</div>
+          <div class="project-metric-label">Data Points</div>
+        </div>
+        <div class="project-metric">
+          <div class="project-metric-val">5 Vars</div>
+          <div class="project-metric-label">Regression Model</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-up visible">
+      <div class="project-num">03</div>
+      <div class="project-tag">Finance Operations · Frost Bank · 2025</div>
+      <div class="project-title">Transaction Risk &amp;<br>Reconciliation</div>
+      <p class="project-desc">Managed $20,000+ in daily transactions with 100% accuracy across a 5-month tenure. Performed pattern analysis on 500+ accounts for fraud prevention, and executed daily reconciliation on $100,000+ in cash assets.</p>
+      <div class="project-metrics">
+        <div class="project-metric">
+          <div class="project-metric-val">$100K+</div>
+          <div class="project-metric-label">Assets Reconciled</div>
+        </div>
+        <div class="project-metric">
+          <div class="project-metric-val">100%</div>
+          <div class="project-metric-label">Accuracy Rate</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card fade-up visible">
+      <div class="project-num">04</div>
+      <div class="project-tag">Real Estate Finance · 2023</div>
+      <div class="project-title">Revenue Tracking &amp;<br>Lead Generation System</div>
+      <p class="project-desc">Built Excel-based financial tracking system reconciling $15,000+ in monthly rental revenue. Developed and launched IDX-integrated property website that grew online inquiries by 25% within 60 days and improved lead conversion by 20%.</p>
+      <div class="project-metrics">
+        <div class="project-metric">
+          <div class="project-metric-val">+25%</div>
+          <div class="project-metric-label">Inquiry Growth</div>
+        </div>
+        <div class="project-metric">
+          <div class="project-metric-val">$15K+</div>
+          <div class="project-metric-label">Revenue Tracked</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid fade-up visible">
+    <div>
+      <div class="section-label">Contact</div>
+      <h2>Let's connect<br>and talk finance.</h2>
+      <p class="contact-intro">
+        I'm actively seeking FP&amp;A Analyst, Investment Banking Analyst, and Corporate Finance roles in Austin and beyond. Open to full-time positions, contract work, and financial modeling freelance projects.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:Ping.garret@gmail.com" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-icon">✉</span>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">Ping.garret@gmail.com</div>
+            </div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://linkedin.com/in/garret-ping" target="_blank" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-icon">in</span>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">linkedin.com/in/garret-ping</div>
+            </div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/garret-ping" target="_blank" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-icon">⌥</span>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/garret-ping</div>
+            </div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="availability-card">
+        <div class="avail-status">
+          <div class="avail-dot"></div>
+          <span class="avail-text">Available for opportunities</span>
+        </div>
+        <div class="avail-title">Open to full-time<br>finance roles.</div>
+        <p class="avail-desc">
+          Based in Austin, TX. Available immediately. Willing to consider hybrid or remote roles nationwide.
+        </p>
+        <div class="avail-roles">
+          <div class="avail-role">FP&amp;A Analyst</div>
+          <div class="avail-role">Investment Banking Analyst</div>
+          <div class="avail-role">Corporate Finance Analyst</div>
+          <div class="avail-role">Financial Modeling (Freelance)</div>
+          <div class="avail-role">Treasury / Budget Analyst</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Garret Ping</div>
+  <div class="footer-note">Austin, TX · Available for hire · 2025</div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+
+</body></html>
